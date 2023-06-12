@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video Upload</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('Screenshot.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  
+    header {
+      background-color: #12a1df;
+      padding: 20px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+    }
+  
+    header h1 {
+      margin: 0;
+      flex-grow: 1;
+      text-align: center;
+    }
+  
+    header a {
+      color: #141313;
+      text-decoration: none;
+      font-size: 30px;
+      font-weight: bold;
+      margin-left: 20px;
+      text-size-adjust: 20px;
+    }
+  
+    header a:hover {
+      color: #f1f0ea;
+    }
+  
+    #upload-form {
+      width: 300px;
+      margin: 0 auto;
+      margin-top: 50px;
+      border: 1px solid #a9a7a7;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #upload-form:hover {
+      background-color: #f1f1f1;
+    }
+    
+    .no-background-image {
+      background-color: #fff;
+    }
+    #upload-form input[type="file"] {
+      margin-bottom: 10px;
+      background-color: #fff;
+    }
+  
+    #upload-form input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    #upload-form:hover {
+      border-color: #555;
+    }
+    footer {
+      background-color: #333;
+      padding: 10px;
+      color: #fff;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">Home</a>
+  </header>
+
+  <div id="upload-form" class="no-background-image">
+    <h2>Upload Video</h2>
+    <form action="result.html">
+      <input type="hidden" name="MAX_FILE_SIZE" value="52428800"> <!-- 50MB in bytes(50 * 1024 * 1024 bytes) -->
+      <!-- <input type="file" name="video" accept="video/*"> -->
+      <input type="file" name="video" accept="video/*" required>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Deep Fake Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>

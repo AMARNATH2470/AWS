@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Uploaded Video</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    body h1{
+        text-align: center;
+    }
+    header {
+      background-color: #12a1df;
+      padding: 20px;
+      color: black;
+      display: flex;
+      align-items: center;
+    }
+  
+    header h1 {
+      margin: 0;
+    }
+    header a {
+      color: #141313;
+      text-decoration: none;
+      font-size: 30px;
+      font-weight: bold;
+      margin-left: 20px;
+      text-size-adjust: 20px;
+    }
+
+    header a:hover {
+      color: #f1f0ea;
+    }
+  
+    video {
+      width: 100%;
+      max-width: 500px;
+      margin: 50px auto;
+      display: block;
+    }
+
+    /* .video-label span {
+      display: inline;
+      font-size: 20px;
+      margin-right: 10px;
+    }
+
+    .thumbs-up {
+      color: green;
+    }
+
+    .thumbs-down {
+      color: red;
+    } */
+
+    footer {
+      background-color: #333;
+      padding: 10px;
+      color: #fff;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">Home</a>
+  </header>
+  
+  <h1>Uploaded Video</h1>
+
+  <video controls>
+    <source src="uploaded_videos/video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- <div class="video-label">
+    <span>Fake</span>
+    <span class="thumbs-up">&#128078;</span>
+  </div> -->
+
+  <footer>
+    <p>&copy; 2023 Deep Fake Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>
